@@ -1,0 +1,6 @@
+- next js
+- tailwind css
+- GeoLocation api: getting current location
+- Air pollution api: get air pollution readings
+- current weather data
+- big data: track location using the values of latitude and longitude
