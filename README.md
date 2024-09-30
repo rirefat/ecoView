@@ -1,4 +1,5 @@
 - next js
+- next js parallal routes
 - tailwind css
 - GeoLocation api: getting current location
 - Air pollution api: get air pollution readings
