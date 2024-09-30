@@ -1,5 +1,9 @@
-export default function Default() {
+const Default = () => {
     return (
-        <div>Default page</div>
+        <div>
+            default
+        </div>
     );
-}
+};
+
+export default Default;

@@ -1,5 +1,11 @@
-export default function WindPage() {
+import React from 'react';
+
+const WindPage = () => {
     return (
-        <div>wind page</div>
+        <div>
+            
+        </div>
     );
-}
+};
+
+export default WindPage;

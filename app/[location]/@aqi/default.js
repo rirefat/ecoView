@@ -1,5 +1,5 @@
 export default function Default() {
     return (
-        <div>Default Page</div>
+        <div>Default page</div>
     );
 }

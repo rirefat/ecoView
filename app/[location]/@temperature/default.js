@@ -1,5 +1,5 @@
-export default function Default() {
-    return (
-        <div>Default page</div>
-    );
-}
+const Default = () => {
+    return <div>Default Page</div>;
+};
+
+export default Default;

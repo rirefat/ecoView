@@ -1,5 +1,8 @@
-export default function TemperaturePage() {
+
+const TemperaturePage = () => {
     return (
-        <div>Temperature page</div>
-    );
-}
+      <div>TemperaturePage</div>
+    )
+  }
+  
+  export default TemperaturePage

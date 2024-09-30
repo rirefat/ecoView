@@ -1,11 +1,11 @@
-export default function Layout({ children, aqi, temperature, wind, weather }) {
+export default function Layout({ children ,aqi, temperature, wind, weather}) {
     return (
         <div className="wrapper">
             {children}
             {aqi}
             {temperature}
-            {wind}
             {weather}
+            {wind}
         </div>
     );
 }
