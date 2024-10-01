@@ -1,5 +1,5 @@
-export default function Page() {
-  return (
-    <div>EcoView</div>
-  );
+import LocationDetector from "@/components/LocationDetector";
+
+export default function Home() {
+    return <LocationDetector />;
 }
