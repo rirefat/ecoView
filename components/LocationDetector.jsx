@@ -11,7 +11,7 @@ const LocationDetector = () => {
 
     useEffect(() => {
         setLoading(true);
-        const params =new URLSearchParams(searchParams);
+        const params = new URLSearchParams(searchParams);
 
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
@@ -33,7 +33,8 @@ const LocationDetector = () => {
                             alt="Loading..."
                             height={500}
                             width={500}
-                            className="my-4" />
+                            className="my-4"
+                        />
                         <p className="text-xl text-center tracking-widest">Detecting Location...</p>
                     </>
                 )
