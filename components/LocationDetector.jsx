@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 const LocationDetector = () => {
     const [loading, setLoading] = useState(false);
@@ -24,22 +24,24 @@ const LocationDetector = () => {
     }, [router, searchParams, pathName]);
 
     return (
-        <div className="flex flex-col justify-center items-center h-screen bg-[#FAFAFA] text-slate-700">
-            {
-                loading && (
-                    <>
-                        <Image
-                            src="/loading.gif"
-                            alt="Loading..."
-                            height={500}
-                            width={500}
-                            className="my-4"
-                        />
-                        <p className="text-xl text-center tracking-widest">Detecting Location...</p>
-                    </>
-                )
-            }
-        </div>
+        <Suspense>
+            <div className="flex flex-col justify-center items-center h-screen bg-[#FAFAFA] text-slate-700">
+                {
+                    loading && (
+                        <>
+                            <Image
+                                src="/loading.gif"
+                                alt="Loading..."
+                                height={500}
+                                width={500}
+                                className="my-4"
+                            />
+                            <p className="text-xl text-center tracking-widest">Detecting Location...</p>
+                        </>
+                    )
+                }
+            </div>
+        </Suspense>
     )
 
 };
