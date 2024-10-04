@@ -1,4 +1,4 @@
-import AQICoomponent from "@/components/AQICoomponent";
+import AQICoomponent from "@/components/aqi/AQICoomponent";
 
 export default function AQIPage({
     params: { location },

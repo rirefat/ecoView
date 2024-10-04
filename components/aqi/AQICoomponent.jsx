@@ -1,17 +1,17 @@
 import { getAQIInfo } from "@/lib/weather-info";
-import Card from "./Card";
-import Image from "next/image";
+import Card from "../Card";
 import AQISingleInfo from "./AQISingleInfo";
 
 
 const AQICoomponent = async ({ lat, lon }) => {
 
     const { main, components } = await getAQIInfo(lat, lon);
+    
     const aqiStatus = main.aqi === 1 ? "Good"
         : main?.aqi === 2 ? "Fair"
-            : main?.aqi === 3 ? "Moderate"
-                : main?.aqi === 4 ? "Poor"
-                    : "Very Poor";
+        : main?.aqi === 3 ? "Moderate"
+        : main?.aqi === 4 ? "Poor"
+        : "Very Poor";
 
 
     return (
