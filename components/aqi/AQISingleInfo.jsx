@@ -8,8 +8,8 @@ const AQISingleInfo = ({title, value, unit }) => {
                 className="flex items-center gap-2 text-sm text-[#CADEE8] lg:text-base"
             >
                 <Image
-                    height={25}
-                    width={25}
+                    height={80}
+                    width={80}
                     className="max-w-[18px]"
                     src="/icons/icon_air_element.png"
                     alt="icon"

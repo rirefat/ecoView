@@ -14,12 +14,12 @@ const TemperatureComponent = async ({ lat, lon }) => {
                     className="max-w-20"
                     src="/icons/icon_tempareture.png"
                     alt="rain icon"
-                    width={25}
-                    height={25}
+                    width={75}
+                    height={75}
                 />
                 <h3 class="feature-title">{temp}°C</h3>
 
-                <span class="feature-name">Feels Like {feels_like}°C</span>
+                <span class="feature-name text-center">Feels Like {feels_like}°C</span>
             </div>
         </Card>
     );

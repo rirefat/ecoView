@@ -13,11 +13,11 @@ const WindComponent =async ({ lat, lon }) => {
                     className="max-w-20"
                     src="/icons/icon_wind.png"
                     alt="rain icon"
-                    width={25}
-                    height={25}
+                    width={75}
+                    height={75}
                 />
                 <h3 class="feature-title">{speed} km/h</h3>
-                <span class="feature-name">Wind Direction {deg}°</span>
+                <span class="feature-name text-center">Wind Direction {deg}°</span>
             </div>
         </Card>
     );

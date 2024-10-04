@@ -13,11 +13,11 @@ const CurrentWeather = async ({ lat, lon }) => {
                     className="max-w-20"
                     src={`https://openweathermap.org/img/wn/${icon}@4x.png`}
                     alt="rain icon"
-                    width={50}
-                    height={50}
+                    width={80}
+                    height={80}
                 />
                 <h3 class="feature-title">{main}</h3>
-                <span class="feature-name capitalize">{description}</span>
+                <span class="feature-name capitalize text-center">{description}</span>
             </div>
         </Card>
     );
