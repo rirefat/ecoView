@@ -11,7 +11,7 @@ const TemperatureComponent = async ({ lat, lon }) => {
             <h6 class="feature-name">Current Temperature</h6>
             <div class="feature-main">
                 <Image
-                    class="max-w-20"
+                    className="max-w-20"
                     src="/icons/icon_tempareture.png"
                     alt="rain icon"
                     width={25}
