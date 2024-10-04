@@ -1,20 +1,23 @@
 import Image from "next/image";
 import Card from "../Card";
+import { getWeatherInfo } from "@/lib/weather-info";
 
-const CurrentWeather = ({lat, lon}) => {
+const CurrentWeather = async ({ lat, lon }) => {
+    const { main, description, icon } = await getWeatherInfo(lat, lon);
+    
     return (
         <Card>
             <h6 class="feature-name">Current Weather</h6>
             <div class="feature-main">
                 <Image
                     className="max-w-20"
-                    src="/icons/icon_rain.png"
+                    src={`https://openweathermap.org/img/wn/${icon}@4x.png`}
                     alt="rain icon"
-                    width={25}
-                    height={25}
+                    width={50}
+                    height={50}
                 />
-                <h3 class="feature-title">Rain</h3>
-                <span class="feature-name">Moderate Rain</span>
+                <h3 class="feature-title">{main}</h3>
+                <span class="feature-name capitalize">{description}</span>
             </div>
         </Card>
     );
