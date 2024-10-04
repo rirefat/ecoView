@@ -1,11 +1,8 @@
+import CurrentWeather from "@/components/weather/CurrentWeather";
 
 
 const WeatherPage = () => {
-    return (
-        <div>
-            weather page
-        </div>
-    );
+    return <CurrentWeather/>;
 };
 
 export default WeatherPage;
