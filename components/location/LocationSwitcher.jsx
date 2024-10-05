@@ -37,14 +37,16 @@ const LocationSwitcher = () => {
                 <div
                     className="absolute left-0 top-12 z-[999] w-full min-w-[280px] rounded-md bg-white p-4 shadow max-md:-translate-x-1/2"
                 >
-
                     <ul
                         role="list"
-                        className="divide-y divide-gray-100 [&>*]:py-2 [&>li]:cursor-pointer"
+                        className="divide-y divide-gray-100 [&>*]:py-2 [&>li]:cursor-pointer max-h-48 overflow-y-scroll"
                     >
                         {
                             locations.map((info) => (
-                                <li key={info}>
+                                <li 
+                                key={info}
+                                className="hover:bg-slate-200 px-1"
+                                >
                                     <Link
                                         href={`/${info.location}?latitude=${info.latitude}&longitude=${info.longitude}`}
                                     >
@@ -54,7 +56,6 @@ const LocationSwitcher = () => {
                             ))
                         }
                     </ul>
-
                 </div>
             }
         </div>
