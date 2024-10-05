@@ -1,5 +1,6 @@
 import InvalidLocation from "@/components/InvalidLocation";
 import TemperatureComponent from "@/components/temperature/TemperatureComponent"
+import { getResolvedLocation } from "@/lib/location-info";
 
 const TemperaturePage =async ({
   params: { location },
