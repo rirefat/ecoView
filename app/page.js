@@ -1,4 +1,4 @@
-import LocationDetector from "@/components/LocationDetector";
+import LocationDetector from "@/components/location/LocationDetector";
 import { Suspense } from "react";
 
 export default function Home() {
