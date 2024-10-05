@@ -1,4 +1,5 @@
 import { getLocationInfo } from "@/lib/location-info";
+import LocationSwitcher from "./LocationSwitcher";
 
 const LocationInfo = async ({ lat, lon }) => {
     const { continent, countryName, city } = await getLocationInfo(lat, lon);
@@ -16,30 +17,7 @@ const LocationInfo = async ({ lat, lon }) => {
                     </h2>
 
                     {/* switcher */}
-                    {/* <div className="relative">
-                        <button>
-                            <Image
-                                className="size-9"
-                                src="/icons/link.svg"
-                                alt="link icon"
-                                width={75}
-                                height={75}
-                            />
-                        </button>
-                        <div
-                            className="absolute left-0 top-12 z-[999] w-full min-w-[280px] rounded-md bg-white p-4 shadow max-md:-translate-x-1/2"
-                        >
-                            <ul
-                                role="list"
-                                className="divide-y divide-gray-100 [&>*]:py-2 [&>li]:cursor-pointer"
-                            >
-                                <li>Kolkata</li>
-                                <li>Dhaka</li>
-                                <li>London</li>
-                                <li>Amsterdam</li>
-                            </ul>
-                        </div>
-                    </div> */}
+                    <LocationSwitcher/>
                 </div>
                 <p className="text-lg text-[#293A4E] lg:text-xl font-semibold">
                     {countryName} | {city}
