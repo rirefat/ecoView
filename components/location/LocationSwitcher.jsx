@@ -17,8 +17,6 @@ const LocationSwitcher = () => {
         getLocationList();
     }, []);
 
-    console.log(locations)
-
     return (
         <div className="relative">
             <button
@@ -35,7 +33,7 @@ const LocationSwitcher = () => {
             {
                 showLocationList &&
                 <div
-                    className="absolute left-0 top-12 z-[999] w-full min-w-[280px] rounded-md bg-white p-4 shadow max-md:-translate-x-1/2"
+                    className="absolute left-0 top-12 z-[999] w-full min-w-[280px] rounded-md bg-white py-4 shadow max-md:-translate-x-1/2"
                 >
                     <ul
                         role="list"
@@ -45,7 +43,7 @@ const LocationSwitcher = () => {
                             locations.map((info) => (
                                 <li 
                                 key={info}
-                                className="hover:bg-slate-200 px-1"
+                                className="hover:bg-slate-200 px-8 hover:shadow"
                                 >
                                     <Link
                                         href={`/${info.location}?latitude=${info.latitude}&longitude=${info.longitude}`}
