@@ -9,7 +9,7 @@ export default function Layout({ children, aqi, temperature, wind, weather }) {
                 className="bg-img"
                 alt="bg image"
                 width={700}
-                height={1200}
+                height={1800}
             />
             <div class="overlay"></div>
             {/* image background and overlay  */}
